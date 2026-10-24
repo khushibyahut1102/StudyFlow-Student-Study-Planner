@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudyFlow - Student Study Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <h1>📚 StudyFlow</h1>
+    <p>Your personal student study planner</p>
+  </header>
+
+  <main class="container">
+
+    <section class="welcome">
+      <h2>Welcome, Student! 👋</h2>
+      <p>Plan your day, track your tasks, and achieve your goals.</p>
+    </section>
+
+    <section class="stats">
+      <div class="card">
+        <h3>Total Tasks</h3>
+        <p id="totalTasks">0</p>
+      </div>
+
+      <div class="card">
+        <h3>Completed</h3>
+        <p id="completedTasks">0</p>
+      </div>
+
+      <div class="card">
+        <h3>Pending</h3>
+        <p id="pendingTasks">0</p>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>➕ Add a Study Task</h2>
+
+      <form id="taskForm">
+        <label for="taskInput">Task Name</label>
+        <input
+          type="text"
+          id="taskInput"
+          placeholder="e.g. Study Data Structures"
+          required
+        >
+
+        <label for="subjectInput">Subject</label>
+        <input
+          type="text"
+          id="subjectInput"
+          placeholder="e.g. DSA"
+          required
+        >
+
+        <button type="submit">Add Task</button>
+      </form>
+    </section>
+
+    <section class="panel">
+      <h2>📝 My Study Tasks</h2>
+      <div id="taskList"></div>
+      <p id="emptyMessage">No tasks yet. Add your first task!</p>
+    </section>
+
+    <section class="panel">
+      <h2>🎯 Daily Motivation</h2>
+      <p id="quoteText">Small steps every day lead to big results.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Made with ❤️ for students | StudyFlow</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
